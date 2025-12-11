@@ -52,7 +52,7 @@ Debe ejecutarse **solo en entornos locales, aislados y controlados**.
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/TU-USUARIO/tecnosys-insegura.git
+git clone https://github.com/jopehi/tecnosys-insegura.git
 cd tecnosys-insegura
 ```
 
@@ -67,8 +67,8 @@ cd tecnosys-insegura
 Importar el archivo SQL incluido o ejecutar manualmente:
 
 ```sql
-CREATE DATABASE tecnosys_insegura;
-USE tecnosys_insegura;
+CREATE DATABASE tecnosysdb;
+USE tecnosysdb;
 
 -- Tabla de usuarios con contraseñas en texto plano
 CREATE TABLE usuarios (
@@ -99,7 +99,7 @@ Editar el archivo `config.php`:
 $DB_HOST = "localhost";
 $DB_USER = "root";        // Intencionalmente inseguro
 $DB_PASS = "root123";     // Contraseña débil
-$DB_NAME = "tecnosys_insegura";
+$DB_NAME = "tecnosysdb";
 ```
 
 ---
